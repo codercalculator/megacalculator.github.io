@@ -2,7 +2,29 @@
 <html>
     <head>
         <title>Калькулятор</title>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">.
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* ПК */
+            body {
+                font-size: 16px;
+            }
+
+            /* Планшеты */
+            @media (min-width: 768px) {
+                body {
+                    font-size: 18px;
+                }
+            }
+
+            /* Мобилы */
+            @media (max-width: 480px) {
+                body {
+                    font-size: 14px;
+                }
+            }
+        </style>
+
     </head>
     <body>
         <input type ="text" id="num1" />
@@ -11,8 +33,9 @@
         <button onclick="subtract()">-</button>
         <button onclick="multiply()">×</button>
         <button onclick="devide()">:</button>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">?</a>
         <p>Результат вычислений: <span id="result"></span></p>
         <script src="calcul.js"></script>
 
-    </body>
+    </body> 
 </html>
